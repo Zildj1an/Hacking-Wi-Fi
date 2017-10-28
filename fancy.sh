@@ -24,4 +24,4 @@ sudo espeak "Now... please, select your victim"
 interface_mon=`iwconfig 2>&1 | awk '{print $1}' | grep mon`
 
 
-sudo airodump-ng $interface_mon
+sudo airodump-ng $interface_mon -a
