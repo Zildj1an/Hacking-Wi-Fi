@@ -1,7 +1,7 @@
 #!/bin/bash
 
 interface=`iwconfig 2>&1 | awk '{print $1}' | grep wlp`
-
+#interface=`iwconfig | grep IEEE | cut -b 1-6` in my case 
 cowsay -f eyes 'HACKING-WIFI' | toilet --gay -f term
 sudo espeak "Are you ready for hacking wi-fi?"
 
