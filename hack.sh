@@ -1,6 +1,6 @@
 #!/bin/bash
 
-interface=`iwconfig 2>&1 | awk '{print $1}' | grep wlp`
+interface=`iwconfig 2>&1 | awk '{print $1}' | grep wlp` #Or ... | awk '/wlp/ {print $1}'
 
 ifconfig
 
