@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#cowsay -f eyes 'HACKING-WIFI' | toilet --gay -f term
 interface=`iwconfig 2>&1 | awk '{print $1}' | grep wlp` #Or ... | awk '/wlp/ {print $1}'
 
 ifconfig
